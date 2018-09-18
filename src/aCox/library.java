@@ -1,0 +1,9 @@
+package aCox;
+
+public class library
+{
+	public static void println(String str)
+	{
+		System.out.println(str);
+	}
+}

@@ -6,12 +6,13 @@ import static aCox.library.cutOut;
 import static aCox.library.multiplicationTable;
 import static aCox.library.sumUpTo;
 import static aCox.library.dateStr;
+import static aCox.library.leastCommonMultiple;
 
 public class testFile
 {
     public static void main(String[] args)
     {
-        println("I love a cup of java in the morning");
+        println("Console is printed in the format 'expected: actual'");
 
         println("");
 
@@ -28,6 +29,10 @@ public class testFile
         String e = dateStr("04/29/2001");
         String f = dateStr("12/25/2018");
         println("01-04-2001: " + d + "\n04-29-2001: " + e + "\n12-25-2018: " + f);
+
+
+        //peer review added cases
+        System.out.println(dateStr("01 01 2001"));
 
         println("");
 
@@ -54,5 +59,13 @@ public class testFile
         int h = sumUpTo(5);
         int i = sumUpTo(100);
         println("10: " + String.valueOf(g) + "\n15: " + String.valueOf(h) + "\n5050: " + String.valueOf(i));
+
+        println("");
+
+        //Test of leastCommonMultiple method
+        g = leastCommonMultiple(18, 12, 16);
+        h = leastCommonMultiple(10, 11, 12);
+        i = leastCommonMultiple(5, 3, 2);
+        println("144: " + g + "\n660: " + h + "\n30: " + i);
     }
 }

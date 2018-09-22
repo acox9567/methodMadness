@@ -30,10 +30,6 @@ public class testFile
         String f = dateStr("12/25/2018");
         println("01-04-2001: " + d + "\n04-29-2001: " + e + "\n12-25-2018: " + f);
 
-
-        //peer review added cases
-        System.out.println(dateStr("01 01 2001"));
-
         println("");
 
         //Test of cutOut method
